@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Homepage - Avtomagazin</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0d7ff2",
+              "background-light": "#f5f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div
+          class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <!-- TopNavBar -->
+            <header
+              class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-300/20 dark:border-slate-700/50 px-4 sm:px-10 py-3"
+            >
+              <div class="flex items-center gap-4 text-black dark:text-white">
+                <div class="size-6 text-primary">
+                  <span class="material-symbols-outlined !text-3xl"
+                    >directions_car</span
+                  >
+                </div>
+                <h2
+                  class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  Avtomagazin
+                </h2>
+              </div>
+              <div class="hidden md:flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-9">
+                  <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                    href="#"
+                    >Home</a
+                  >
+                  <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                    href="#"
+                    >Catalog</a
+                  >
+                  <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                    href="#"
+                    >Brands</a
+                  >
+                  <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                    href="#"
+                    >About Us</a
+                  >
+                </nav>
+                <div class="flex gap-2">
+                  <button
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white hover:bg-slate-300 dark:hover:bg-slate-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >person</span
+                    >
+                  </button>
+                  <button
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white hover:bg-slate-300 dark:hover:bg-slate-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                  >
+                    <span class="material-symbols-outlined text-xl"
+                      >shopping_cart</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </header>
+            <main class="flex flex-col gap-8 md:gap-12">
+              <!-- HeroSection -->
+              <div class="@container mt-4">
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                    data-alt="A modern, sleek dark-colored car with headlights on, parked in a dimly lit environment"
+                    style="
+                      background-image: linear-gradient(
+                          rgba(16, 25, 34, 0.1) 0%,
+                          rgba(16, 25, 34, 0.8) 100%
+                        ),
+                        url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUIe1DGqn8E1t5BdH2_f482JgzrAJQYoon_a556KMj7HUMDaW8C8CgZdL7cdDEwuOfYUNNcxtFFIzhGYbUUn5B0kqBd3Jvz34t398wyymMir9Zx1oENRlxi-4zzTgdtc6fJGiNSB01Xd_u6hwiKgA2eI_WG3NtLUW7ZmcaDhXQ21V5fu8TnaoqFNtFKqRh4jBrvGg12xAIaoUvawJPRf8ryzzS2vAbKwEhB07Lnq7Il-AKpBt1-ZeXqy9KHq7-pIHvKdVmiFjU1Po');
+                    "
+                  >
+                    <div class="flex flex-col gap-2 text-left max-w-xl">
+                      <h1
+                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      >
+                        Sizning avtomobilingiz uchun sifatli ehtiyot qismlar
+                      </h1>
+                      <h2
+                        class="text-slate-200 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                      >
+                        O'zbekiston bo'ylab tezkor yetkazib berish
+                      </h2>
+                    </div>
+                    <label
+                      class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16"
+                    >
+                      <div
+                        class="flex w-full flex-1 items-stretch rounded-lg h-full"
+                      >
+                        <div
+                          class="text-slate-400 flex border border-slate-700 bg-slate-800/80 backdrop-blur-sm items-center justify-center pl-[15px] rounded-l-lg border-r-0"
+                        >
+                          <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input
+                          class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-none text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/80 backdrop-blur-sm focus:border-primary h-full placeholder:text-slate-400 px-[15px] border-r-0 border-l-0 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                          placeholder="Avto ehtiyot qism qidiring…"
+                          value=""
+                        />
+                        <div
+                          class="flex items-center justify-center rounded-r-lg border-l-0 border border-slate-700 bg-slate-800/80 backdrop-blur-sm pr-[7px]"
+                        >
+                          <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white hover:bg-primary/90 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                          >
+                            <span class="truncate">Search</span>
+                          </button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Featured Categories Section -->
+              <div>
+                <h2
+                  class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                >
+                  Mashhur Kategoriyalar
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+                  <div
+                    class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 cursor-pointer transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary !text-3xl"
+                      >medical_services</span
+                    >
+                    <div class="flex flex-col gap-1">
+                      <h3
+                        class="text-black dark:text-white text-base font-bold leading-tight"
+                      >
+                        Motor
+                      </h3>
+                      <p
+                        class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal"
+                      >
+                        All motor parts
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 cursor-pointer transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary !text-3xl"
+                      >settings</span
+                    >
+                    <div class="flex flex-col gap-1">
+                      <h3
+                        class="text-black dark:text-white text-base font-bold leading-tight"
+                      >
+                        Transmissiya
+                      </h3>
+                      <p
+                        class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal"
+                      >
+                        Transmission components
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 cursor-pointer transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary !text-3xl"
+                      >car_crash</span
+                    >
+                    <div class="flex flex-col gap-1">
+                      <h3
+                        class="text-black dark:text-white text-base font-bold leading-tight"
+                      >
+                        Kuzov qismlari
+                      </h3>
+                      <p
+                        class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal"
+                      >
+                        Body parts and panels
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 cursor-pointer transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary !text-3xl"
+                      >oil_barrel</span
+                    >
+                    <div class="flex flex-col gap-1">
+                      <h3
+                        class="text-black dark:text-white text-base font-bold leading-tight"
+                      >
+                        Moylar
+                      </h3>
+                      <p
+                        class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal"
+                      >
+                        Oils and fluids
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Special Offers Section -->
+              <div>
+                <h2
+                  class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                >
+                  Maxsus Takliflar
+                </h2>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+                >
+                  <div
+                    class="flex flex-col rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
+                  >
+                    <div
+                      class="aspect-video bg-cover bg-center"
+                      data-alt="A close-up of a clean, modern car engine."
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzgp5BiB0mt6P-dFhHfJaf7xSuee5ksInUXiMHuBAArtqjieA1x7-SDKH2iyuvdSlzgQMoPFBKAAMgmlsVHBW0kuKhrInQStex1UVmkdAtPw6u9w5zJeMLSdMf53UQ7DkKGu5TDPLiI2EvousFbaXNGEm9gzbzytK2Vc504Wug6ykdlGLVvU6Q8j-boXrCyqX1Wbz0zRPKvqH3GV_JMMSlNNa9ZxjWgBvANO82HiRxH5swrTfRb-_q4MtsYppX9iHVMTx26nJ5E3w');
+                      "
+                    ></div>
+                    <div class="p-4 flex flex-col gap-4 flex-1">
+                      <div class="flex flex-col gap-1">
+                        <h3
+                          class="text-lg font-bold text-black dark:text-white"
+                        >
+                          Engine Oil 5W-30
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">
+                          High-performance synthetic oil
+                        </p>
+                      </div>
+                      <div class="flex items-baseline gap-2 mt-auto">
+                        <span class="text-2xl font-bold text-primary"
+                          >$45.99</span
+                        >
+                        <span
+                          class="text-base line-through text-slate-500 dark:text-slate-400"
+                          >$59.99</span
+                        >
+                      </div>
+                      <button
+                        class="w-full mt-2 h-10 px-4 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
+                  >
+                    <div
+                      class="aspect-video bg-cover bg-center"
+                      data-alt="A set of metallic brake pads and a rotor."
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-PWX07WcAFEZxNqA1LkPR9fTQbajIDDv4nYZ0ib9ztrX1UmkzxvBYT2lpLXhNld0Z8r7wTB10gjD1uLU7tyUhjtTmtDRSp9-efAdX1IvpDFNjdn_u-yalx2FaIWs75MFuGCqkUvLwbVFujf9EMHxzxINP1dRltAIMkYaydLldadUx9cBditoyg-m1k5QHBq-xtqwFqn0jYRlnsiFBQITAuGuJwQTW8CwOEWDWOhR9BT8BZRmbYKnO8EhwDX-TemzlFfSJl5yCzRM');
+                      "
+                    ></div>
+                    <div class="p-4 flex flex-col gap-4 flex-1">
+                      <div class="flex flex-col gap-1">
+                        <h3
+                          class="text-lg font-bold text-black dark:text-white"
+                        >
+                          Ceramic Brake Pads
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">
+                          Front axle set for Chevrolet
+                        </p>
+                      </div>
+                      <div class="flex items-baseline gap-2 mt-auto">
+                        <span class="text-2xl font-bold text-primary"
+                          >$79.50</span
+                        >
+                        <span
+                          class="text-base line-through text-slate-500 dark:text-slate-400"
+                          >$99.00</span
+                        >
+                      </div>
+                      <button
+                        class="w-full mt-2 h-10 px-4 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
+                  >
+                    <div
+                      class="aspect-video bg-cover bg-center"
+                      data-alt="An air filter for a car, with a clean white mesh."
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWeFrUiYIptIkgf3PENHuyARAMLwugg3ux44Xm1zdJieE-77ujk8keAJe6jEgsRxNBiD-piw_BJro1aXlvFYjR706NuxeNkAoXuENzlsr98-m-tgobt9aTq741pf-Vinf_uPewccKjNC3f574bwKKi9jw8rgdc_GTPLa6l12SznYAgAM8MABo7Jb4vZYYNW-IjeBsAFgXC5czgfuNpcVtGUp-LxGw3goLyaqb0fHCY2Owegw0gWYohmw11Z8mGiu0Bq0ewQRAdUq8');
+                      "
+                    ></div>
+                    <div class="p-4 flex flex-col gap-4 flex-1">
+                      <div class="flex flex-col gap-1">
+                        <h3
+                          class="text-lg font-bold text-black dark:text-white"
+                        >
+                          Cabin Air Filter
+                        </h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">
+                          Activated carbon, for Toyota
+                        </p>
+                      </div>
+                      <div class="flex items-baseline gap-2 mt-auto">
+                        <span class="text-2xl font-bold text-primary"
+                          >$18.00</span
+                        >
+                        <span
+                          class="text-base line-through text-slate-500 dark:text-slate-400"
+                          >$25.00</span
+                        >
+                      </div>
+                      <button
+                        class="w-full mt-2 h-10 px-4 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Brands Section -->
+              <div>
+                <h2
+                  class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                >
+                  Bizning Hamkorlarimiz
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+                  <div
+                    class="flex items-center justify-center p-6 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                  >
+                    <img
+                      class="h-10 grayscale opacity-60 dark:invert dark:opacity-80"
+                      data-alt="Chevrolet logo"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUYsi9fSo23l3plYQxBkQDAMSbyAzaB79dKI8oy8vCvq6oQnX5AYOWkpLHjt3-ZPoqB-mEzJyrCUV5FGf1LZVP93q50xMnq1WECA1gDfDUgXKWdvWWAalBvo-BZb4W0HGlfk5c7-mHnj3ntKAI6zlreE2ziPMERsY26vCP-RgdfP0rNmXWUrUg5XA1xm0hA3HgVWFOcHyDKQXTwJtqzjtMvVXwjRG4hd6srN8TFKHfKFbNc9woLwLhx6vq3auOlDuwg3Sb6dawiY"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center p-6 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                  >
+                    <img
+                      class="h-10 grayscale opacity-60 dark:invert dark:opacity-80"
+                      data-alt="Toyota logo"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr3xly3fsCnF-SgSusny2V3OuZrdJl2B_jHFHG8JGW1LxK8eM7kqDT3K8odYxR7_CT-n6lHpJoJWQpamZJSsPvXhrlt7ijkuO4VcrAYmAY-7cQpqXHAWkVlzr9P8oek7dq_JnjANfKwweUseuwhpJr8uOhKqAATgY1z1CnZpBW7RjlLL2jIcksm2HG5__oKvdj2uWodk4EqfJMKcVdsjPJSH12YMu6xoltJkLG7v3tSSkTKKm3GTppCD1nSXwZmRs8gGI4r-ZHmVc"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center p-6 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                  >
+                    <img
+                      class="h-10 grayscale opacity-60 dark:invert dark:opacity-80"
+                      data-alt="Hyundai logo"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtK3XYEfQuF5xw41gR782II6DPPKRQwPEdSO-yp_Yu2D9MdI9uVUYr-jydvrYcYwIBNj3nMIVBQAPB9-QvKtaHbcS4ls2Pw1b_VscHf213wmXm7hNjBIXs4RSIXIIQkCa-JmXyFy3dxvna33qprYFv3yYn7bKvRLOM0ObJmH5B_eSDz2Vz4-I7awY0oQJwbY1AsQdSdGQamMGkQpdYX8mMV0uwLnUrRkFoKKRTJ6BMSJCz69Z9AhI1pfTp9lv6vOWtzl0-_qj8D10"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center p-6 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                  >
+                    <img
+                      class="h-8 grayscale opacity-60 dark:invert dark:opacity-80"
+                      data-alt="Kia logo"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIOHXWAKhGLe1Vh2MyKtNmQKLxUsAZb-iruc8AZ_9CIp-djxNAtyu1QMoNOaTCo-k2oKwnPWV6t1HAwKn3UDhOB7ka9GlicEliMscOSfPzGHKkhysFmJKr9G-L1hZWBDtX1ZC2TB6rg-uwrj7Utmw-41xalmUVkswhp1fc4lX3E1er2Rb1l9aT5NOLrqIY9VdjWN5-1cn6UiL4_988GHWEKW8fcVPSss7jq0XQVf8wRCIN0Nus27PCZgqnDG_W9X1N8uUfutJCBEw"
+                    />
+                  </div>
+                </div>
+              </div>
+            </main>
+            <!-- Footer -->
+            <footer
+              class="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8 pb-8 px-4"
+            >
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col gap-4 col-span-2 md:col-span-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-primary !text-2xl"
+                      >directions_car</span
+                    >
+                    <h2 class="text-black dark:text-white text-lg font-bold">
+                      Avtomagazin
+                    </h2>
+                  </div>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Your trusted partner for quality auto parts.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-bold text-black dark:text-white">
+                    Quick Links
+                  </h3>
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >Home</a
+                  >
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >Catalog</a
+                  >
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >About Us</a
+                  >
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >Contact</a
+                  >
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-bold text-black dark:text-white">
+                    Customer Service
+                  </h3>
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >FAQ</a
+                  >
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >Shipping &amp; Returns</a
+                  >
+                  <a
+                    class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                    href="#"
+                    >Track Order</a
+                  >
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-bold text-black dark:text-white">
+                    Contact Us
+                  </h3>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    support@avtomagazin.com
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    +998 71 200 00 00
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400"
+              >
+                © 2024 Avtomagazin. All Rights Reserved.
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
